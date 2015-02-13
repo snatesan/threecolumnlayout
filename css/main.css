@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  background-color: green;
+}
+
+.flexbox .container {
+  position: static;
+  background-color: inherit;
+  min-height: 0;
+
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  
+  -webkit-flex-direction: row;
+  -mox-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.firstcolumn {
+  position: absolute;
+  top: 0;
+  width: 180px;
+  background-color: red;
+}
+
+
+.thirdcolumn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  background-color: blue;
+}
+
+.flexbox .firstcolumn,
+.flexbox .thirdcolumn
+{
+  position: static;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.secondcolumn {
+  margin: 0 200px 0 180px;
+  background-color: green;
+}
+
+.flexbox .secondcolumn {
+  margin: 0;
+
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+.secondcolumn > h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+
